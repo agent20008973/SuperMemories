@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SuperMemories</string>
+    <string name="dodaj_nowe_wspomnienie">Dodaj nowe wspomnienie</string>
+    <string name="zobacz_wspomnienia">Zobacz wspomnienia</string>
+
+    <string name="tytu">Tytuł</string>
+    <string name="tre">Treść</string>
+    <string name="usu">Usuń</string>
+    <string name="zobacz_cytat_na_dzi">zobacz cytat na dziś</string>
+    <string name="wybierz_zdj_cie">Wybierz zdjęcie</string>
+
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="interstitial_ad_unit_id2">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="dodaj_lokalizacje">dodaj lokalizacje</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="zobacz_miejsce_dodania">Zobacz miejsce dodania</string>
+    <string name="supermemories">SuperMemories</string>
+</resources>

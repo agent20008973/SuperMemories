@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mobilenavigation2"
+    app:startDestination="@id/memoryInfoFragment2">
+
+    <fragment
+        android:id="@+id/memoryInfoFragment2"
+        android:name="com.lsm.supermemories.ui.memories.list.MemoryInfoFragment"
+        android:label="MemoryInfoFragment" />
+</navigation>

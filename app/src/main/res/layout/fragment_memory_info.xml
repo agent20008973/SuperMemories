@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="memoryModel"
+            type="com.lsm.supermemories.viewmodels.MemoryInfoViewModel" />
+
+        <variable
+            name="memoryFragment"
+            type="com.lsm.supermemories.ui.memories.list.MemoryInfoFragment" />
+
+        <variable
+            name="imageUtils"
+            type="com.lsm.supermemories.utils.ImageUtils" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".ui.help.MemoryInfoFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/color1">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@{memoryModel.infoTitle}"
+                    android:textSize="30sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color1"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@{memoryModel.infoContent}"
+                    android:layout_margin="5dp"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color1"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="@{memoryModel.infoDate}"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:src="@drawable/ic_baseline_add_a_photo_24"
+                android:translationX="100sp"
+                android:translationY="150sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button3"
+                android:onClick="@{() -> memoryModel.delete_memory()}"
+                android:text="@string/usu"
+                android:translationX="100sp"
+                android:translationY="280sp" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button3"
+                android:onClick="@{() -> memoryModel.go_to_map()}"
+                android:text="@string/zobacz_miejsce_dodania"
+                android:translationX="100sp"
+                android:translationY="-180sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

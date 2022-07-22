@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "958175028588",
+    "project_id": "supermemories-f5ca5",
+    "storage_bucket": "supermemories-f5ca5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958175028588:android:1b9d07551a717328483f49",
+        "android_client_info": {
+          "package_name": "com.lsm.supermemories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958175028588-0in2r0qlg93hdthidp8pvbhqs3531r52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJSj9mOc-DUiviu3uZ3z05F83eXgBBVhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958175028588-0in2r0qlg93hdthidp8pvbhqs3531r52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

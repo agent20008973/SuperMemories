@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity2">
+
+    <data>
+        <variable
+            name = "DownloadMemory"
+            type="com.lsm.supermemories.ui.memories.list.DownloadMemory"/>
+        <variable
+            name="imageUtils"
+            type="com.lsm.supermemories.utils.ImageUtils"/>
+        <variable
+            name="viewModelInfo"
+            type="com.lsm.supermemories.viewmodels.DownloadMemoryInfo"/>
+        <variable
+            name="viewModel"
+            type="com.lsm.supermemories.viewmodels.DownloadViewModel"/>
+        <variable
+            name="memory"
+            type="com.lsm.supermemories.data.Memory"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color3">
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/tytu"
+            android:inputType="text"
+            android:text="@{`` + viewModelInfo.title}"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.049" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:context=".ui.help.DownloadMemory">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_baseline_add_a_photo_24"
+                android:translationX="100sp"
+                android:translationY="350sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button3"
+                android:onClick="@{() ->DownloadMemory.addMemory()}"
+                android:text="@string/dodaj_nowe_wspomnienie"
+                android:translationX="50sp"
+                android:translationY="473sp" />
+
+            <EditText
+                android:id="@+id/editTextContent"
+                android:layout_width="200dp"
+                android:layout_height="168dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/tre"
+
+                android:text="@{`` + viewModelInfo.text}"
+                android:inputType="textMultiLine"
+                android:textAlignment="center"
+                android:translationX="95sp"
+                android:translationY="-120sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button3"
+                android:onClick="@{() ->DownloadMemory.addImage()}"
+                android:text="@string/wybierz_zdj_cie"
+                android:translationX="50sp"
+                android:translationY="150sp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button3"
+                android:onClick="@{() ->DownloadMemory.get_coordinates()}"
+                android:text="@string/dodaj_lokalizacje"
+                android:translationX="50sp"
+                android:translationY="155sp" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
